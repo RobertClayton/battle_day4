@@ -4,3 +4,5 @@ ruby '2.4.0'
 
 gem 'rspec'
 gem 'sinatra'
+gem 'capybara'
+gem 'selenium-webdriver'
