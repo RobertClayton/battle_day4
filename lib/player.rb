@@ -1,4 +1,7 @@
 class Player
-  $player1 = nil
-  $player2 = nil
+  attr_reader :name
+
+  def initialize(name)
+    @name = name
+  end
 end

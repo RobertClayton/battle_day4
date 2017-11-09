@@ -1,8 +1,8 @@
 require_relative '../lib/player.rb'
 
 describe Player do
+  subject(:player) { described_class.new('Andrew') }
   it 'should return its name' do
-    sign_in_and_play
-    expect(@player1).to eq('Marco')
+    expect(player.name).to eq('Andrew')
   end
 end

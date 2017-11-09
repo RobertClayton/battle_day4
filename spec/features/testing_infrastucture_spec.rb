@@ -8,7 +8,7 @@ feature 'Enter names' do
 end
 
 feature 'hit points' do
-    scenario 'View hit point on the screen' do
+  scenario 'View hit point on the screen' do
     sign_in_and_play
     expect(page).to have_content('Robert HP = 100')
   end
