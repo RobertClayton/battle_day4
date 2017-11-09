@@ -1,13 +1,13 @@
 require_relative '../lib/game.rb'
 
 describe Game do
-  subject(:game) { described_class.new }
-  it 'should set up a new game with 100 hp' do
-    expect(game.hp).to eq 100
-  end
+  let(:player1) { double('player1')}
+  let(:player2) { double('player2')}
 
-  it 'should -10 off hp' do
-    game.attack
-    expect(game.hp).to eq 90
+  subject(:game) { described_class.new(player1, player2) }
+
+  it 'should accept two players as arguments' do
+    expect(subject.player1).to eq(player1)
+    expect(subject.player2).to eq(player2)
   end
 end

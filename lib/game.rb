@@ -1,13 +1,12 @@
 class Game
-DEFAULT_HP = 100
+  attr_reader :player1, :player2
 
-attr_reader :hp
+  def initialize(player1, player2)
+    @player1 = player1
+    @player2 = player2
+  end
 
-def initialize(hp = DEFAULT_HP)
-  @hp = hp
-end
-
-  def attack
-    @hp -= 10
+  def attack(player)
+    player.reduce_health
   end
 end

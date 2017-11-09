@@ -1,5 +1,3 @@
-
-
 feature 'Enter names' do
   scenario 'Players can enter their names and see them on the screen' do
     sign_in_and_play
@@ -21,4 +19,3 @@ feature 'attack player 2' do
     expect(page).to have_content('Robert HP = 90')
   end
 end
-#to_not
